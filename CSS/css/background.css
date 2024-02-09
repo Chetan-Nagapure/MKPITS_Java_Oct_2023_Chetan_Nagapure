@@ -1,0 +1,10 @@
+body {
+  background-color: azure;background-image: url(/images/download.jpg);background-position: center center; background-repeat: no-repeat;padding-bottom: 50%;
+
+  h2 {
+    background-position: center center;
+    background-color: #87a5a5;
+    background-size: 200px;
+    text-align: center;
+  }
+}

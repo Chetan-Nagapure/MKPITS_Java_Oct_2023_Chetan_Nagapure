@@ -1,0 +1,9 @@
+body{
+    background-color: bisque;
+    background-image: url(/images/download.jpg);
+    background-repeat: no-repeat;
+    /* background-position: right top; */
+    background-position: center center;
+    /* background-attachment: scroll; */
+    background-attachment: fixed;
+}

@@ -1,0 +1,16 @@
+body {
+  background-image: url(/images/download\ \(3\).jpg);
+  background-repeat: no-repeat;
+  /* background-position: right top; */
+  background-position: center center;
+  /* background-attachment: scroll; */
+  background-attachment: fixed;
+  /* background-size: cover; */
+  background-size: 500px;
+
+  border: 5px dotted black;
+  padding: 40px;
+  background-color:khaki;
+  background-clip: content-box;
+
+}
