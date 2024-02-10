@@ -1,0 +1,5 @@
+h2 {
+  text-transform: lowercase;
+  text-transform: uppercase;
+  text-transform: capitalize;
+}

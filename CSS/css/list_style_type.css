@@ -1,0 +1,13 @@
+ol {
+  list-style-type: decimal;
+  /* list-style-type: circle;
+  list-style-type: lower-alpha;
+  list-style-type: lower-greek;
+  list-style-type: decimal-leading-zero;
+  list-style-type: lower-roman; */
+}
+
+ul{
+    list-style-type: circle;
+    list-style-type: decimal;
+}

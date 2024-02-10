@@ -1,0 +1,11 @@
+h2 {
+  text-decoration: underline;
+}
+
+h3 {
+  text-decoration: overline;
+}
+
+p {
+  text-decoration: line-through;
+}
