@@ -1,0 +1,10 @@
+table,
+th,
+td {
+  border: solid blueviolet;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 10px;
+}

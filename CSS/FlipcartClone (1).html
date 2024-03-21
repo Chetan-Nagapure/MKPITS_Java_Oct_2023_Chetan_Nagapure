@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flipkart_Clone</title>
+    <link rel="stylesheet" href="FlipcartClone.css" />
+  </head>
+  <body>
+    <div>
+      <div class="container">
+        <img
+          class="flipkartLogo"
+          src="/IMAGE/Flipkart_Explore.svg"
+          alt="Error"
+        />
+        <div class="search_div">
+          <div class="buttondiv">
+            <button class="btnsearch">
+              <img src="/IMAGE/search.svg" alt="Error" class="searchIcon" />
+            </button>
+          </div>
+          <input
+            type="text"
+            placeholder="Search for products, brands and more..."
+            class="searchinput"
+          />
+        </div>
+        <div class="navbar">
+          <img src="/IMAGE/admin.svg" alt="User Icon" class="userIcon" />
+          <div class="Logindivspan">
+            <span class="loginspan">Login</span>
+          </div>
+          <img
+            src="/IMAGE/arrow.svg"
+            alt="Dropdown Arrow"
+            class="dropdownArrow"
+          />
+        </div>
+        <div class="cartdiv">
+          <img src="/IMAGE/cart.svg" alt="Cart Icon" class="shoppingCartIcon" />
+          <div class="cartsivspan">
+            <span class="itemCount">Cart</span>
+          </div>
+        </div>
+        <div class="categoryDiv">
+          <img src="/IMAGE/Store.svg" alt="Store Icon" class="storeIcon" />
+          <div class="storedivspan">
+            <span class="storespan">Become A Seller</span>
+          </div>
+        </div>
+        <img src="/IMAGE/Dropdown.svg" alt="Error" class="dropDownImg" /><br />
+      </div>
+    </div>
+    <div class="maindiv2">
+      <!-- <div class=""> -->
+      <figure class="groceryfig">
+        <img src="/IMAGE/grocery.webp" alt="groceryimg" class="groceryimg" />
+        <figcaption>Grocery</figcaption>
+      </figure>
+      <figure class="mobilefig">
+        <img src="/IMAGE/mobile.webp" alt="phoneimg" class="mobileimg" />
+        <figcaption>Mobiles</figcaption>
+      </figure>
+      <figure class="factionfig">
+        <img src="/IMAGE/clothes.webp" alt="faction" class="factionimg" />
+        <div class="factionarrrowimgdiv">
+          <figcaption>Fashions</figcaption>
+          <img src="/IMAGE/arrow.svg" alt="arrow" class="arrowimgfaction" />
+        </div>
+      </figure>
+      <figure class="electronicsfig">
+        <img
+          src="/IMAGE/Electronics.webp"
+          alt="electronicsimg"
+          class="electronicsimg"
+        />
+        <div class="electronicsarrowimgdiv">
+          <figcaption>Electronics</figcaption>
+          <img src="/IMAGE/arrow.svg" alt="arrow" class="arrowimgelectronics" />
+        </div>
+      </figure>
+      <figure class="homeappliancefig">
+        <img
+          src="/IMAGE/HomeAndFurniture.webp"
+          alt="homeandfurniture"
+          class="homeandfurnitureimg"
+        />
+        <div class="homeappliancesarrowimgdiv">
+          <figcaption>Home & Furniture</figcaption>
+          <img
+            src="/IMAGE/arrow.svg"
+            alt="arrow"
+            class="arrowimghomefurniture"
+          />
+        </div>
+      </figure>
+      <figure class="appliancesfig">
+        <img src="/IMAGE/Appliances.webp" alt="" class="appliancesimg" />
+        <figcaption class="appliancescaption">Appliances</figcaption>
+      </figure>
+      <figure class="travelfig">
+        <img src="/IMAGE/Travel.webp" alt="travelll" class="travelimg" />
+        <figcaption class="travelcaption">Travels</figcaption>
+      </figure>
+      <figure class="beautytoysfig">
+        <img
+          src="/IMAGE/BeautyToys.webp"
+          alt="BeautyToys"
+          class="beautytoysimg"
+        />
+        <div class="beautytoysarrowimgdiv">
+          <figcaption class="beautytoyscaption">
+            Beauty Toys and More
+          </figcaption>
+          <img src="/IMAGE/arrow.svg" alt="Arrow" class="arrowimgbeautytoys" />
+        </div>
+      </figure>
+      <figure class="twoweelerfig">
+        <img
+          src="/IMAGE/TwoWheelers.webp"
+          alt="two wheelers"
+          class="twowheelerimg"
+        />
+        <div class="twoweelerratingdiv">
+          <figcaption class="twowheelercaption">Two Wheelers</figcaption>
+          <img src="/IMAGE/arrow.svg" class="arrowimgtwowheels" alt="Arrow" />
+        </div>
+      </figure>
+      <!-- </div> -->
+    </div>
+    <!-- <div class="sliderdiv">
+      <img src="/IMAGE/slideimg1.webp" alt="" class="silde1" />
+    </div> -->
+
+    <!-- slider container html-->
+    <div id="parent-container">
+      <div class="navigation-buttons">
+        <div class="previous nav-btn"><</div>
+        <div class="next nav-btn">></div>
+      </div>
+
+      <div class="slider-carousel">
+        <div class="images main">
+          <img
+            id="slider-img"
+            src="https://rukminim1.flixcart.com/fk-p-flap/1000/170/image/d666db78034ac39f.jpg?q=20"
+            alt="Image not available"
+          />
+        </div>
+        <div class="images">
+          <img
+            id="slider-img"
+            src="https://rukminim1.flixcart.com/fk-p-flap/1000/170/image/aa1b2bdcf519b468.jpg?q=20"
+            alt=""
+          />
+        </div>
+        <div class="images">
+          <img
+            id="slider-img"
+            src="https://rukminim1.flixcart.com/fk-p-flap/1000/170/image/12ad072f27dfc663.jpg?q=20"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- slider containe script -->
+    <script>
+      const previous = document.querySelector(".previous");
+      const next = document.querySelector(".next");
+      const images = document.querySelector(".slider-carousel").children;
+      const totalImages = images.length;
+      let currentIndex = 0;
+
+      // Event Listeners to previous and next buttons
+      previous.addEventListener("click", () => {
+        previousImage();
+      });
+
+      next.addEventListener("click", () => {
+        nextImage();
+      });
+
+      setInterval(() => {
+        nextImage();
+      }, 1000);
+
+      // Function to go to next Image
+      function nextImage() {
+        images[currentIndex].classList.remove("main");
+        if (currentIndex == totalImages - 1) {
+          currentIndex = 0;
+        } else {
+          currentIndex++;
+        }
+
+        images[currentIndex].classList.add("main");
+      }
+
+      // Function to go to previous Image
+      function previousImage() {
+        images[currentIndex].classList.remove("main");
+        if (currentIndex == 0) {
+          currentIndex = totalImages - 1;
+        } else {
+          currentIndex--;
+        }
+
+        images[currentIndex].classList.add("main");
+      }
+    </script>
+  </body>
+</html>

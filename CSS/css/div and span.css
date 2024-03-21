@@ -1,0 +1,12 @@
+.container {
+  color: aqua;
+}
+.row {
+  p {
+    color: blueviolet;
+  }
+
+  span {
+    color: brown;
+  }
+}

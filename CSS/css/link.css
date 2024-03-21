@@ -1,0 +1,6 @@
+a{
+    a:link{color:blue;}
+    a:visited{color: aqua;}
+    a:hover{color: brown;}
+    a:active{color:black;}
+}

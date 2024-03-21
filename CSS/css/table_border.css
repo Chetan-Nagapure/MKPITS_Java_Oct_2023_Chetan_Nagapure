@@ -1,0 +1,8 @@
+table,
+th,
+td {
+  border: solid green;
+}
+tr.colps {
+  visibility: collapse;
+}

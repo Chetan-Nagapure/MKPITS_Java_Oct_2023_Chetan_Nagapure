@@ -1,0 +1,11 @@
+.container {
+  width: auto;
+  overflow: auto;
+  
+
+}
+
+.container div {
+ width: 100px
+ 
+}

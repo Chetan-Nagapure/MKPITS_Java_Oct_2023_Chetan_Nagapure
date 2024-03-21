@@ -1,0 +1,9 @@
+h2 {
+  border-style: solid;
+  border-color: blue;
+}
+
+p {
+  border-style: dashed dotted double groove;
+  border-color: blue red black green;
+}

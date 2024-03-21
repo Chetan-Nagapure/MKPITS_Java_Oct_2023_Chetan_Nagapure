@@ -1,0 +1,1 @@
+drop table student;   /*it delete the table*/   

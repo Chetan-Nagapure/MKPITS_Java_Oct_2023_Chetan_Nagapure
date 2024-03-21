@@ -1,0 +1,31 @@
+body {
+  background-color: white;
+  margin: 0%;
+}
+.container {
+  background-color: rgb(256, 256, 256);
+  padding-top: 10px;
+  padding-left: 0px;
+  width: 100%;
+}
+.head {
+  display: flex;
+}
+.search {
+  background-color: antiquewhite;
+  border: none;
+  font-size: 30px;
+  height: 47px;
+  width: 70%;
+  display: flex;
+}
+.image {
+  height: 50px;
+  width: 40px;
+  position: relative;
+  left: 20px;
+  top: 5px;
+}
+.placeholder {
+  margin-left: 200px;
+}
