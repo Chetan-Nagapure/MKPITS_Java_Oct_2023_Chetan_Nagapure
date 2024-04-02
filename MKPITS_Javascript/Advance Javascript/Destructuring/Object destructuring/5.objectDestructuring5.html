@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Javascript object destructuring
+    </title>
+</head>
+<body>
+    <script>
+        let {a, b=20} = {a:10};
+        console.log(a);
+        console.log(b);
+
+        let{c =30, d=20} = {c:10};
+        console.log(c);
+        console.log(d);
+
+        let {a:y =30, b:z =20} = {a:10};
+        console.log(y);
+        console.log(z);
+    </script>
+</body>
+</html>

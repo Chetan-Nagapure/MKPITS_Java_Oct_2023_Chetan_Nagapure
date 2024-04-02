@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        JavaScript object destructuring
+    </title>
+</head>
+<body>
+    <script>
+    let course = {
+        courseName: "JavaScript",
+        duration: "SixMonths",
+        tutor: "Geeks for geeks",
+        language: {
+          language1: "HTML",
+          language2: "CSS"
+        }
+      };
+
+      let {  courseName,duration,tutor,language: { language1, language2 } } = course;
+      console.log(courseName);
+      console.log(duration);
+      console.log(tutor);
+      console.log(language1);
+      console.log(language2);
+    </script>
+</body>
+</html>
