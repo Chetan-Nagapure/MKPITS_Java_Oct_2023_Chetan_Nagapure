@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Problem Sync and Callback Hell</title>
+</head>
+<body>
+    <script>
+    console.log("start");
+    getName =(name, callback) =>{
+    setTimeout(() => {console.log("Inside name setTimeout")
+    callback(name);},2000);
+    };
+
+    getHobbies = (name, callback) =>
+    { setTimeout (() => {console.log("Inside Hobbies setTimeout")
+    callback(['Cricket', 'Reading', 'Dancing'])},1000);}
+
+    const nm = getName('chetan', (nm) => {console.log(nm); getHobbies(nm, hobby => {console.log(hobby) }) })
+    console.log("End")
+
+</script>
+</body>
+</html>

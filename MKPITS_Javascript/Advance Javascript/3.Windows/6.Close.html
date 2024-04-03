@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Window</title>
+  </head>
+  <body>
+    <h1>Windows close</h1>
+    <button id="btn">close new window</button>
+
+    <script>
+      var newWindow = window.open("http://www.geekyshows.com");
+      let Cls = () => {
+        newWindow.close();
+      };
+      document.getElementById("btn").addEventListener("click", cls);
+    </script>
+  </body>
+</html>

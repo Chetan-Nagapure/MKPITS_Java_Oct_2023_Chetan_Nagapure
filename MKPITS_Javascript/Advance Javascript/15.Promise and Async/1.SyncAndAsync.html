@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Promise and Async</title>
+</head>
+<body>
+    <script>
+    //Syncronous
+    myfun = () =>
+    {
+        console.log("inside function");
+    };
+    console.log("start");
+    myfun()
+    console.log("End");
+
+    //Asyncronous
+    console.log("start");
+    setTimeout(()=>{
+        console.log("inside set time out")
+    },2000);
+
+    console.log("End")
+
+    //Callback is not always asynchronous
+    console.log("Start")
+    const Roll =[1,2,3,4,5,6,7,8,9,10];
+    Roll.forEach(r => {
+        console.log(r)
+    });
+    console.log("End")
+
+
+    </script>
+</body>
+</html>

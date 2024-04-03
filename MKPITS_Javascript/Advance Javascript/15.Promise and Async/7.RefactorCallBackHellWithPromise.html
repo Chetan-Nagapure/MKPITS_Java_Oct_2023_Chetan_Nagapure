@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Refactor Call Back Hell With Promise</title>
+  </head>
+  <body>
+    <script>
+      console.log("Start");
+      function getName(name) {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            console.log("Inside Name setTimeOut-Promise");
+            resolve(name);
+          }, 2000);
+        });
+      }
+
+      function getHobbies(name) {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            console.log("Inside Hobbies setTimeOut");
+            resolve(["Cricket", "Reading", "Dancing"]);
+          }, 1000);
+        });
+      }
+
+      getName("Sonam")
+        .then((nm) => getHobbies(nm))
+        .then((hobby) => console.log(hobby));
+    </script>
+  </body>
+</html>
+Advance Javascript/Promise and Async/7.RefactorCallBackHellWithPromise.html

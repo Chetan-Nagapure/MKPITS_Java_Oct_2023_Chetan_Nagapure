@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript form handling</title>
+</head>
+<body>
+    <form action="" name="myform" id="myformid">
+        Username: <input type="text" name="m_username_field" id="username_id"><br><br>
+        Passward: <input type="password" name="m_password_field" id="password_id"><br><br>
+        <input type="button" name="m_sbtn" value="Reset" onclick="resetform()">
+    </form>
+    <script>
+        var myform = document.myform;
+        console.log(myform);
+        console.log(myform.length);
+        console.log(myform.elements[1]);
+        console.log(myform.method);
+        console.log(myform.action);
+
+        resetform = () => {
+            myform.reset();
+        }
+    </script>
+</body>
+</html>

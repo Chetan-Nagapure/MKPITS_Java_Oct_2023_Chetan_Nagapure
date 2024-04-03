@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript form handling</title>
+</head>
+<body>
+     <form action="" name="myform" id="myformid">
+        Username: <input type="text" name="m_username_field" ><br><br>
+        Passward: <input type="password" name="m_password_field" ><br><br>
+        <input type="submit" name="m_sbtn" value="submit">
+    </form>
+    <hr>
+    <hr>
+     <form action="" name="yourform" id="myformid">
+        Username: <input type="text" name="y_username_field" ><br><br>
+        Passward: <input type="password" name="y_password_field" ><br><br>
+        <input type="submit" name="y_sbtn" value="submit">
+    </form>
+    <script>
+        var myform = document.forms[0];
+        console.log(myform);
+
+        var yourform = document.forms[1];
+        console.log(yourform);
+    </script>
+
+
+</body>
+</html>

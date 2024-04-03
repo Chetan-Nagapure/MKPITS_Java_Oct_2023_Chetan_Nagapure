@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basic Promise Example </title>
+</head>
+<body>
+    <script>
+        // 1. Creating a promise
+        const myPromise = new Promise((resolve, reject) => {
+        let req = true;
+        if(req == true)
+        {
+           resolve("request resolved")
+        }
+        else{
+            reject("request rejected")
+        }
+    });
+
+   
+   const myPromise1 = new Promise((resolve, reject) => 
+   {
+        let req = true;
+        if(req == true)
+        {
+           resolve("request resolved")
+        }
+        else{
+            reject("request rejected")
+        }
+    }).then(
+        (value) => {console.log(value);},
+        (error) => {console.log(error);}
+ );
+
+
+
+
+
+   
+    </script>
+</body>
+</html>
