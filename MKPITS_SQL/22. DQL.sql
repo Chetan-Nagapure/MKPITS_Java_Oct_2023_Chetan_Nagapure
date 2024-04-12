@@ -1,0 +1,5 @@
+-- DQL - Data Query Lnguage
+-- DQL statement is used to perform queries on data.
+-- basicaly use to fetch the data from database.
+-- SELECT is the command which allows getting the data out of the database to perform operations with it. 
+-- which can fetch the table of database and each attribute(eg. column of the table).
